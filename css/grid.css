@@ -1,0 +1,32 @@
+body{
+    font-family: Inter;
+    font-size: 12px;
+}
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "sidebar asidebar main-content";
+    grid-template-columns: 10% 10% 80%;
+    grid-template-rows: 15% 85%;
+}
+
+.main-content{
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-sidebar{
+    grid-area: sidebar;
+}
+
+aside{
+    grid-area: asidebar;
+}
+
+/* nav{
+    grid-area: navbar;
+} */
